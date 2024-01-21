@@ -1,6 +1,6 @@
 # S3 bucket for tfstate file
 resource "aws_s3_bucket" "tf_bucket" {
-  bucket = var.bucket_name
+  bucket        = var.bucket_name
   force_destroy = true
 
   # Prevent accidental deletion of this S3 bucket
