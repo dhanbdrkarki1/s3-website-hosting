@@ -27,7 +27,7 @@ resource "aws_cloudfront_distribution" "cf" {
   aliases = [ var.root_domain_name, "*.${var.root_domain_name}" ]
 
   default_cache_behavior {
-    allowed_methods  = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
+    allowed_methods  = ["GET", "HEAD", "OPTIONS"]
     cached_methods   = ["GET", "HEAD"]
     target_origin_id = local.s3_origin_id
 
@@ -54,10 +54,9 @@ resource "aws_cloudfront_distribution" "cf" {
 
   # acm certificate
   viewer_certificate {
-    acm_certificate_arn      = aws_acm_certificate_validation.cert.certificate_arn
+    acm_certificate_arn      = aws_acm_certificate.cert.arn
     minimum_protocol_version = "TLSv1.2_2021"
     ssl_support_method       = "sni-only"
-    # cloudfront_default_certificate = true
 
   }
 

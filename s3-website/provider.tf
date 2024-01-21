@@ -19,3 +19,10 @@ provider "aws" {
     tags = var.default_tags
   }
 }
+
+# SSL certificates must be set up in the North Virginia (us-east-1) region for CloudFront.
+provider "aws" {
+  alias = "acm_default_region"
+  region = "us-east-1"
+  profile = var.profile
+}
