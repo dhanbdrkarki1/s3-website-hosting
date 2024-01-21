@@ -1,0 +1,99 @@
+$base-color: #ff5a00;
+$primary-font-color: #ff5a00;
+$secondary-font-color: #2b2b2b;
+$shades-color: #eeeeee;
+$h1-desk-tab: 2.5rem;
+$p-desk-tab: 1rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.event__header {
+  background-image: url("../images/events.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10vh;
+  height: 25vh;
+  background-position: 50% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: $h1-desk-tab;
+    color: $shades-color;
+    span {
+      color: $primary-font-color;
+    }
+  }
+}
+
+.events__container {
+  border: none;
+}
+
+.events {
+  max-width: 1170px;
+  display: grid;
+  margin: 0 auto;
+  margin-top: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.event-thumbnail {
+  font-size: $p-desk-tab;
+  transition: all 0.5s ease;
+  border: 2px solid $shades-color;
+  img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+.event-detail {
+  display: flex;
+}
+
+.date {
+  p {
+    color: #eeeeee;
+  }
+}
+
+.event-thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.date {
+  background-color: $base-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  font-weight: 500;
+  p {
+    color: $shades-color;
+  }
+}
+
+.location {
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  .events {
+    max-width: 1024px;
+    margin: auto;
+  }
+} ;

@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.event__header {
+  background-image: url("../images/events.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10vh;
+  height: 25vh;
+  background-position: 50% 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.event__header h1 {
+  font-size: 2.5rem;
+  color: #eeeeee;
+}
+
+.event__header h1 span {
+  color: #ff5a00;
+}
+
+.events__container {
+  border: none;
+}
+
+.events {
+  max-width: 1170px;
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  margin-top: 15px;
+  -ms-grid-columns: (minmax(255px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.event-thumbnail {
+  font-size: 1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: 2px solid #eeeeee;
+}
+
+.event-thumbnail img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.event-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.date p {
+  color: #eeeeee;
+}
+
+.event-thumbnail:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+          box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.date {
+  background-color: #ff5a00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25%;
+  font-weight: 500;
+}
+
+.date p {
+  color: #eeeeee;
+}
+
+.location {
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  .events {
+    max-width: 1024px;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=events.css.map */

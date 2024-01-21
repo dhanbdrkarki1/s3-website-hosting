@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Raleway:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/nav.css" />
+
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/homepage.css" />
+    <link rel="stylesheet" href="./css/event.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav__container">
+          <img src="./images/logo.png" alt="logo" class="logo" />
+          <i class="fas fa-bars hamburger"></i>
+          <div class="dropdown">
+              <button><a href="./index.html" class="nav-link">Home</a></button>
+              <button><a href="./events.html" class="nav-link">Events</a></button>
+              <button><a href="gallery.html" class="nav-link">Gallery</a></button>
+              <div class="pages">
+                  <button class="blog-btn">Blog <i class="fas fa-angle-down "></i></button>
+                  <ul class="nav-links" id="blog-dropdown">
+                    <li><a href="./blog_post.html" class="nav-link">Blog Posts</a></li>
+                    <li><a href="./video_gallery.html" class="nav-link">Videos</a></li>
+                  </ul>
+                </div>
+                <div class="pages">
+                  <button class="pages-btn">Pages <i class="fas fa-angle-down "></i></button>
+                  <ul class="nav-links" id="pages-dropdown">
+                    <li><a href="./about_us.html" class="nav-link">About Us</a></li>
+                    <li><a href="./contact_us.html" class="nav-link">Contact Us</a></li>
+                    <li><a href="./join_as_volunteer.html" class="nav-link">Join as Volunteer</a></li>
+                  </ul>
+                </div>
+          </div>
+      </div>
+      </nav>
+      
+    <section class="container" id="posts" style="margin-top: 10vh">
+      <div class="posts-container">
+        <div class="post">
+          <img src="images/vegan_campaign.png" alt="" class="image" />
+          <div class="date">
+            <i class="far fa-clock"></i>
+            <span>1st may, 2021</span>
+          </div>
+          <h3 class="title" style="font-weight: 600;">Veganism</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            molestias rerum numquam, quos aut est culpa quisquam excepturi sed a
+            inventore dicta tempore consequuntur possimus magnam corporis cum
+            doloremque quasi fugiat exercitationem aliquid cupiditate pariatur.
+            Dolor laboriosam voluptatem ex praesentium magni error debitis
+            maxime alias autem distinctio. Fuga, esse velit!
+          </p>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            reiciendis fugiat quas nemo quia omnis repellat obcaecati quaerat
+            voluptates fuga error dicta cupiditate pariatur soluta dolorum quis
+            eum quibusdam quam?
+          </p>
+          <div class="links">
+            <a href="#" class="user">
+              <i class="far fa-user"></i>
+              <span>by admin</span>
+            </a>
+            <a href="#" class="icon">
+              <i class="far fa-comment"></i>
+              <span>(45)</span>
+            </a>
+            <a href="#" class="icon">
+              <i class="far fa-share-square"></i>
+              <span>(29)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="box">
+          <h3 class="title" style="font-weight: 600;">Other Events</h3>
+          <div class="p-post">
+            <a href="#">
+              <h3>01. blog title goes here</h3>
+              <span><i class="far fa-clock"></i>1st may, 2021</span>
+            </a>
+            <a href="#">
+              <h3>02. blog title goes here</h3>
+              <span><i class="far fa-clock"></i>1st may, 2021</span>
+            </a>
+            <a href="#">
+              <h3>03. blog title goes here</h3>
+              <span><i class="far fa-clock"></i>1st may, 2021</span>
+            </a>
+            <a href="#">
+              <h3>04. blog title goes here</h3>
+              <span><i class="far fa-clock"></i>1st may, 2021</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3 class="title">popular tags</h3>
+          <div class="tags">
+            <a href="#">travel</a>
+            <a href="#">photo</a>
+            <a href="#">science</a>
+            <a href="#">biology</a>
+            <a href="#">aliens</a>
+            <a href="#">nature</a>
+            <a href="#">mountain</a>
+            <a href="#">river</a>
+            <a href="#">camp</a>
+            <a href="#">landscape</a>
+            <a href="#">world</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer style="background-color: #2b2b2b; margin-top: 15px; padding: 20px" >
+      <div
+        class="container footer"
+        
+      >
+        <div class="about__us">
+          <h1 style="font-size: 1.5rem;">About Us</h1>
+          <p style="font-size: 1.5rem;">
+            We partner with over 320 
+            amazing projects worldwide,
+            and have given over $150 million
+            in cash and product grants to 
+            other groups since 2011. We also
+            operate our own dynamic suite
+            of Signature Programs, million in
+            cash and product grants to others
+          </p>
+          <a href="#" style="font-size: 1.5rem;">Read More -></a>
+        </div>
+        <div class="recent__post" style="font-size: 1.5rem;">
+          <h1 style="font-size: 1.5rem;">Recent Post</h1>
+          <ul>
+          <li><a href="#" style="font-size: 1.5rem">Yoga campaign</a></li>
+          <li><a href="#"style="font-size: 1.5rem" >Anti-Animal Violence</a></li>
+          <li><a href="#" style="font-size: 1.5rem">Veganism Awareness Campaign</a></li>
+          </li>
+        </div>
+        <div class="get__in__touch" >
+          <h1 style="font-size: 1.5rem;">Get in Touch</h1>
+          <p style="font-size: 1.5rem;"><strong>Address: </strong> Maitidevi, Kathmandu</p>
+          <p style="font-size: 1.5rem;"><strong>Phone: </strong> 01-454562, 969678969</p>
+          <p style="font-size: 1.5rem;"><strong>Email: </strong> lbefhealthclub@email.com</p>
+        </div>
+      </div>
+      <div class="container" style="display: flex; justify-content: space-between; margin-top: 15px;">
+        <p style="font-size: 12px;"><span style="color: #f98546c7;  ">Copyrights © 2021 </span> All Rights Reserved. <span style="color: #f98546c7; font-size: 12px;">Powered by LBEF Health Club </span></p>
+        <p style="font-size: 12px;"> <a href="#" style="color: #f98546c7; font-size: 12px; ">Join Us Now</a></p>
+      </div>
+    </footer>
+    <script src="./js/nav.js"></script>
+  </body>
+</html>

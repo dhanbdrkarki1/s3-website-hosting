@@ -1,0 +1,102 @@
+.aboutus-row{
+    background-color: #fff;
+}
+.contact-icon{
+    font-size: 50px;
+}
+
+.showoff{
+    padding:20px;
+    text-align: left;
+    
+}
+.aboutus-section{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+.contact-detail-row{
+    padding: 0;
+}
+
+.question {
+    border: 1px solid #f4f4f4;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: none;
+  }
+
+
+.question:after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f35a'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    float: right;
+    margin-left: 5px;
+    font-weight: bold;
+    color: #FF5A00;
+    
+  }
+  
+.active:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f358"; 
+    color: #FF5A00;
+  }
+  
+.answer {
+    visibility: hidden;
+    max-height: 0;
+    transition: all .4s ease;
+    overflow: hidden;
+    border: 1px solid red;
+    border-top: none;
+    border-collapse: collapse;
+  }
+
+.show-answer .answer{
+    visibility: visible;
+    border: 1px solid red;
+    border-top: none;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    padding: 18px;
+    max-height: 100px;
+    transition: all .4s ease-in;
+}
+
+@media (max-width: 768px) {
+    .volunteer-title{
+        text-align: center;
+    }
+    .showoff{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .aboutus-section{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+
+@media (min-width: 768px){
+    .accordion{
+        width: 600px;
+        margin: 0 auto;
+
+    }
+}

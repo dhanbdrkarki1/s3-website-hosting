@@ -1,0 +1,103 @@
+$h1-desk-tab: 2.5rem;
+$p-desk-tab: 1rem;
+
+.carousel-slide {
+  width: 100%;
+  display: flex;
+}
+
+.banner {
+  background: url("../images/fitness_2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 550px;
+  background-position: 50% 55%;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+.hero_text {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: space-between;
+
+  h1 {
+    font-size: $h1-desk-tab;
+    color: #fff;
+  }
+  p {
+    font-size: $p-desk-tab;
+    line-height: 160.4%;
+    color: #fff;
+    font-weight: 400;
+  }
+  button {
+    width: 135px;
+    height: 47px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: all 0.3s ease-in;
+  }
+}
+
+.fade-out {
+  transition: all 1s ease-out;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.fade-in {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 550px;
+}
+
+.joinus__btn {
+  background-color: #ff5a00;
+  color: #fff;
+}
+
+.joinus__btn:hover {
+  background-color: #fff;
+  color: #ff5a00;
+  transform: scale(1.05);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.readmore__btn {
+  background-color: #fff;
+  color: #ff5a00;
+}
+
+.readmore__btn:hover {
+  background-color: #ff5a00;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    background-attachment: unset;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .banner {
+    background-position: 90% 41%;
+  }
+}

@@ -1,0 +1,58 @@
+.footer {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  -ms-grid-columns: (minmax(255px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: 20px;
+}
+
+.footer h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #eeeeee;
+}
+
+.footer p {
+  color: #eeeeee;
+  font-size: 1rem;
+  line-height: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.footer a {
+  color: #f98546;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  margin-top: 15px;
+}
+
+.footer a:hover {
+  color: #eeeeeed0;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer ul a {
+  color: #eeeeeed0;
+  margin-bottom: 15px;
+  display: block;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+.footer ul a:hover {
+  color: #f98546;
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

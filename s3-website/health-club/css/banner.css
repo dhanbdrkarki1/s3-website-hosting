@@ -1,0 +1,126 @@
+.carousel-slide {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner {
+  background: url("../images/fitness_2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 550px;
+  background-position: 50% 55%;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+.hero_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 250px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero_text h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.hero_text p {
+  font-size: 1rem;
+  line-height: 160.4%;
+  color: #fff;
+  font-weight: 400;
+}
+
+.hero_text button {
+  width: 135px;
+  height: 47px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.fade-out {
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.fade-in {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 550px;
+}
+
+.joinus__btn {
+  background-color: #ff5a00;
+  color: #fff;
+}
+
+.joinus__btn:hover {
+  background-color: #fff;
+  color: #ff5a00;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+          box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.readmore__btn {
+  background-color: #fff;
+  color: #ff5a00;
+}
+
+.readmore__btn:hover {
+  background-color: #ff5a00;
+  color: #fff;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+          box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    background-attachment: unset;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .banner {
+    background-position: 90% 41%;
+  }
+}
+/*# sourceMappingURL=banner.css.map */

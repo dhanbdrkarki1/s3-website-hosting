@@ -1,0 +1,380 @@
+$base-color: #ff5a00;
+$primary-font-color: #ff5a00;
+$secondary-font-color: #2b2b2b;
+$shades-color: #eeeeee;
+$h1-desk-tab: 2.5rem;
+$p-desk-tab: 1rem;
+
+.welcome-text,
+.reach,
+.recent__post__container,
+.donation__form,
+.team__container,
+.events__container {
+  h1 {
+    font-size: $h1-desk-tab;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15px;
+    color: #2b2b2b;
+  }
+  span {
+    color: #ff5a00;
+  }
+  p {
+    color: #2b2b2b;
+    text-align: center;
+    margin-top: 15px;
+    font-size: $p-desk-tab;
+    line-height: 25px;
+  }
+}
+
+.cards-container {
+  max-width: 1170px;
+  display: grid;
+  margin: 0 auto;
+  margin-top: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: 20px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.card {
+  font-size: $p-desk-tab;
+  transition: all 0.5s ease;
+  border: 2px solid $shades-color;
+  img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .description {
+    padding: 10px;
+    h1 {
+      font-size: $p-desk-tab;
+      font-weight: 700;
+      color: $primary-font-color;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    p {
+      color: $secondary-font-color;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.our-reach-container {
+  max-width: 1170px;
+  display: grid;
+  margin: 0 auto;
+  margin-top: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: 20px;
+}
+
+.our_reach_row {
+  background-color: #ecf0f1;
+  color: #fff;
+  height: 58.8235294117647vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.our_reach > img {
+  max-width: 500px;
+  height: auto;
+}
+.reach_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.reach_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 30px;
+  justify-content: space-between;
+}
+.reach_item_name {
+  text-align: center;
+  padding: 10px;
+  color: black;
+}
+.reach_item {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f98546;
+}
+.onscroll_animate_reach_item,
+.map {
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-name: zoomIn;
+}
+
+.reach {
+  padding: 15px;
+  position: relative;
+  h1 {
+    text-align: left;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.circles {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  padding-bottom: 70px;
+  align-items: center;
+  justify-content: space-between;
+
+  .circle {
+    background-color: #f98546;
+    color: #fff;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    h3 {
+      font-size: $p-desk-tab;
+      color: #999999;
+      position: absolute;
+      text-align: center;
+      bottom: -2.5rem;
+    }
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.counter {
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+// recent posts and our events
+
+.flex-column-wrapper {
+  display: flex;
+  margin-top: 15px;
+}
+
+.recent__post__container {
+  flex: 2;
+  margin-right: 30px;
+}
+
+.events__container {
+  color: #2b2b2b;
+  border: 2px solid #eeeeee;
+  padding: 5px;
+
+  .event__card {
+    display: flex;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    .date {
+      flex: 1;
+      background-color: #ff5a00;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      margin-right: 10px;
+    }
+    .detail {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      font-weight: 400;
+      color: #2b2b2b;
+      p {
+        margin: 0;
+        font-size: $p-desk-tab;
+        text-align: left;
+      }
+    }
+    .detail:hover {
+      color: #ff5a00;
+    }
+  }
+
+  .event__card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+}
+
+.donation__form__container {
+  background-image: url("../images/donation.jpg");
+  height: 515px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.donation__form {
+  float: right;
+  background-color: rgba(52, 74, 73, 0.7);
+  height: 515px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #ff5a00;
+  text-align: left;
+  padding: 30px;
+  .input__field {
+    width: 406px;
+    display: flex;
+    flex-direction: column;
+    label {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    input {
+      height: 40px;
+      padding: 0px 10px;
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.897);
+      border: none;
+      transition: transform 0.5s ease;
+    }
+    select {
+      height: 40px;
+      outline: none;
+      transition: transform 0.5s ease;
+    }
+
+    input:hover,
+    select:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .donate_btn {
+    width: 151px;
+    height: 42px;
+    background-color: #ff5a00;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .donate_btn:hover {
+    background-color: #fff;
+    color: #ff5a00;
+    transform: scale(1.05);
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+}
+
+// Meet our Team
+
+.team__container {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .circles {
+    width: 80%;
+    .circle {
+      width: 6.5rem;
+      height: 6.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .circles {
+    width: 100%;
+    .circle {
+      width: 6.5rem;
+      height: 6.5rem;
+    }
+  }
+  .recent__post__container {
+    h1 {
+      text-align: center;
+    }
+  }
+  .hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  html {
+    font-size: 14px;
+  }
+
+  .circles {
+    width: 100%;
+  }
+
+  .donation__form__container {
+    background-repeat: unset;
+    background-position: unset;
+  }
+  .donation__form {
+    float: unset;
+    width: 100%;
+    padding: 0px;
+    align-items: center;
+
+    .input__field {
+      width: 90%;
+    }
+  }
+
+  .reach {
+    h1 {
+      text-align: center;
+    }
+  }
+}

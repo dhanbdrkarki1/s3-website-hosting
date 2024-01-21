@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.heading_text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: black;
+}
+.color_text,
+.card_title,
+.read_more_text,
+.event_name {
+  color: #f98546;
+}
+
+.card_title {
+  font: normal 700 20px/21.13px "Raleway", sans-serif;
+  padding-bottom: 10px;
+}
+
+/* recent post and our events row */
+.recent_post_event_row {
+  background-color: #fff;
+  color: #000;
+  height: 58.8235294117647vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 25px;
+  text-align: justify;
+  word-spacing: -1px;
+  padding-top: 10px;
+  margin-bottom: 200px;
+}
+.recent_post_event_row::before {
+  content: "";
+  display: table;
+}
+
+.recent_post {
+  -webkit-box-flex: 70%;
+  -ms-flex: 70%;
+  flex: 70%;
+}
+
+.text,
+.card_text {
+  color: #000;
+  font-size: 1rem;
+  line-height: 25px;
+}
+.post_card_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 0.625em;
+}
+
+.post_card {
+  border: 1px solid #d9d9d9;
+  padding-bottom: 10px;
+}
+
+.card_image_top {
+  height: 232.83px;
+  max-width: 100%;
+}
+
+.card_body {
+  padding: 0.625em;
+}
+
+.card_text {
+  padding-top: 15px;
+}
+.our_event {
+  -webkit-box-flex: 30%;
+  -ms-flex: 30%;
+  flex: 30%;
+}
+
+.event_item {
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.date_box {
+  height: 65px;
+  width: 60px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f98546;
+  text-align: center;
+}
+
+.event_name {
+  font-weight: bold;
+}
+
+.event_detail {
+  padding-left: 11px;
+}
+
+.recent_post,
+.our_event {
+  margin: 0 0 30px;
+  padding: 0 15px;
+}
+
+.banner_row {
+  height: 300px;
+  max-width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-image: url(../images/bnr1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 15%;
+}
+.page_title {
+  font-size: 40px;
+  color: #ff5a00;
+  padding-bottom: 20px;
+}
+.page_link {
+  color: #ff5a00;
+}
+
+a {
+  text-decoration: none;
+  color: #2b2b2b;
+  font-weight: 500;
+  font-size: 16px;
+}
+.onmouse {
+  color: #fff;
+}
+.onmouse:hover {
+  color: #ff5a00;
+}
+.blog_posts_row {
+  margin: 0px auto;
+  width: 80%;
+}
+
+.head_text {
+  padding: 18px 0 24px;
+}
+
+.posts_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px auto;
+  max-width: 700px;
+}
+
+.post_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  row-gap: 37px;
+  -webkit-column-gap: 49px;
+  -moz-column-gap: 49px;
+  column-gap: 49px;
+}
+
+.blog_posts {
+  cursor: pointer;
+  -webkit-box-flex: 25%;
+  -ms-flex: 25%;
+  flex: 25%;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.blog_posts:hover {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+  -webkit-box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 25px;
+  margin: 37px 0px 44px;
+}
+
+.pagination a {
+  color: black;
+  border: 1px solid #d9d9d9;
+  background: #fcfcfc;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.pagination :hover {
+  color: #ff5a00;
+}
+
+/* Adding date icon */
+.date::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f274  ";
+  color: #ff5a00;
+}
+
+#goto-Top {
+  background-color: #ff5a00;
+  padding: 1rem;
+  z-index: 1;
+  border: none;
+  border-radius: 50%;
+  position: fixed;
+  right: 1.8rem;
+  bottom: 3rem;
+  cursor: pointer;
+  opacity: 50%;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  display: none;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+#goto-Top:hover {
+  opacity: 100%;
+}
+
+.goto-top-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 20px;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .post_item {
+    row-gap: 37px;
+    -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+  }
+  .blog_posts {
+    -webkit-box-flex: 40%;
+    -ms-flex: 40%;
+    flex: 40%;
+  }
+}
+
+@media (max-width: 992px) {
+  .recent_post_event_row,
+  .our_event {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .recent_post_event_row {
+    margin: 0px 6%;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog_posts {
+    -webkit-box-flex: 60%;
+    -ms-flex: 60%;
+    flex: 60%;
+  }
+  .card_image_top {
+    height: auto;
+  }
+  .page_title {
+    font-size: 28px;
+  }
+}

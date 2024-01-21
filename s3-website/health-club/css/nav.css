@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  top: 0px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.nav__container {
+  max-width: 1170px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  position: relative;
+}
+
+.nav__container i {
+  font-size: 20px;
+  color: #505050;
+  display: none;
+  position: absolute;
+  right: 15px;
+  display: none;
+}
+
+.nav__container img {
+  height: 10vh;
+  width: auto;
+}
+
+.dropdown {
+  width: 35%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.dropdown button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #2b2b2b;
+  font-weight: 500;
+}
+
+.dropdown a:hover {
+  color: #ff5a00;
+}
+
+.pages {
+  position: relative;
+}
+
+.pages li {
+  width: 100%;
+  height: 100%;
+  padding-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.pages li:hover {
+  background: #eeeeee;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.pages button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  text-decoration: none;
+  color: #2b2b2b;
+  cursor: pointer;
+  font-weight: 500;
+  -webkit-transition: all 0.4ms ease;
+  transition: all 0.4ms ease;
+}
+
+.pages button:hover {
+  color: #ff5a00;
+}
+
+.pages a {
+  color: #2b2b2b;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links {
+  position: absolute;
+  background-color: #fff;
+  margin-top: 20px;
+  width: 150px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+  opacity: 0;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.nav-box-shadow {
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(185, 185, 185, 0.63);
+          box-shadow: 0px 0px 8px 1px rgba(185, 185, 185, 0.63);
+}
+
+.show-hidden-navlinks {
+  pointer-events: all;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+@media screen and (max-width: 1300px) {
+  .pages ul {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    height: 10vh;
+  }
+  nav img {
+    height: 10vh;
+    width: auto;
+    margin-left: 15px;
+  }
+  .dropdown {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 7vh;
+    background-color: #fff;
+    padding-bottom: 30px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transform: translateY(-5vh);
+            transform: translateY(-5vh);
+    opacity: 0;
+    pointer-events: none;
+  }
+  .nav__container i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav__container .pages ul {
+    left: 0;
+  }
+}
+
+.show-dropdown {
+  opacity: 1;
+  pointer-events: all;
+  -webkit-transform: translateY(0vh);
+          transform: translateY(0vh);
+}
+
+.expand-dropdown-height {
+  height: 40vh;
+}
+
+.hide-nav {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+/*# sourceMappingURL=nav.css.map */
