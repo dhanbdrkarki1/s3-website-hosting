@@ -10,4 +10,4 @@
 domain's nameserver after the hosted zone is created.
 Otherwise, aws_acm_certificate_validation.cert: Creating... won't complete.</i>
 
-[Static Website Link] (https://github.com/dhanbdrkarki1/Health-club-frontend.git)
+[Static Website Link](https://github.com/dhanbdrkarki1/Health-club-frontend.git)
