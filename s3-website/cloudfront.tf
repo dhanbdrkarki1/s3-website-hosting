@@ -24,6 +24,7 @@ resource "aws_cloudfront_distribution" "cf" {
   enabled             = true
   is_ipv6_enabled     = true
   default_root_object = "index.html"
+  aliases = [ var.root_domain_name, "*.${var.root_domain_name}" ]
 
   default_cache_behavior {
     allowed_methods  = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]

@@ -10,5 +10,5 @@ output "cloudfront_domain_name" {
 }
 
 output "domain_name" {
-  value = "${aws_route53_record.www.name}"
+  value = aws_route53_record.www.name
 }
