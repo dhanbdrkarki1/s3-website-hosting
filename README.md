@@ -1,5 +1,5 @@
 # s3-website-hosting
-** Services used: ** \
+<b> Services used: </b></br>
 &nbsp;&nbsp;&nbsp;&nbsp;1. Amazon S3 \
 &nbsp;&nbsp;&nbsp;&nbsp;2. Amazon Cloudfront \
 &nbsp;&nbsp;&nbsp;&nbsp;3. Amazon Route 53 \
